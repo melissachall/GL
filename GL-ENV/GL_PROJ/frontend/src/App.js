@@ -1,5 +1,5 @@
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
@@ -13,9 +13,10 @@ import NotePage from './pages/NotePage'
 function App() {
   return (
     <Router>
+        <Header />
       <Routes>
-        <Route path="/" exact component={NotesListPages} />
-        <Route path="/note/:id" component={NotePage} />
+        <Route path="/" exact element={<NotesListPages/>} />
+        <Route path="/note/:id" element={<NotePage/>} />
       </Routes>
     </Router>
   );

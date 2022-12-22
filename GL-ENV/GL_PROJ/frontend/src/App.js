@@ -6,17 +6,17 @@ import {
 
 
 import './App.css';
-import Header from './components/Header'
-import NotesListPages from './pages/NotesListPages'
-import NotePage from './pages/NotePage'
+// import NotesListPages from './pages/NotesListPages'
+// import NotePage from './pages/NotePage'
+import {Home} from './pages/index'
 
 function App() {
   return (
     <Router>
-        <Header />
       <Routes>
-        <Route path="/" exact element={<NotesListPages/>} />
-        <Route path="/note/:id" element={<NotePage/>} />
+        {/* <Route path="/" exact element={<NotesListPages/>} /> */}
+        <Route path="/" exact element={<Home/>} />
+        {/* <Route path="/note/:id" element={<NotePage/>} /> */}
       </Routes>
     </Router>
   );

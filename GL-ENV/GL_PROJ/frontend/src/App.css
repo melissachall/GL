@@ -5,12 +5,14 @@
 :root {
     --color1: #EFFFFD;
     --color2: #B8FFF9;
-    --color2: #85F4FF;
-    --color2: #42C2FF;
+    --color3: #85F4FF;
+    --color4: #42C2FF;
     --main-color: var(--color1);
-    /* --button-main: var(--color2); */
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+    background-color: #F9FBFC;
+}
 
 

@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import {Activate, Home, UserHome, Login, ResetPassword, ResetPasswordConfirm, Signup, Google} from './pages/index'
+import {Activate, Home, UserHome, Login, ResetPassword, ResetPasswordConfirm, Signup, Google, Announces} from './pages/index'
 import store from './store';
 // import NotesListPages from './pages/NotesListPages'
 // import NotePage from './pages/NotePage'
@@ -19,10 +19,9 @@ function App() {
       <Router>
         <Layout>
           <Routes>
-            {/* <Route path="/" exact element={<NotesListPages/>} /> */}
-            {/* <Route path="/note/:id" element={<NotePage/>} /> */}
             <Route path="/" exact element={<Home/>} />
             <Route exact path="/user-home" element={<UserHome/>} />
+            <Route exact path="/announces" element={<Announces/>} />
             <Route exact path='/login' element={<Login/>} />
             <Route exact path='/signup' element={<Signup/>} />
             <Route exact path='/google' element={<Google/>} />

@@ -1,11 +1,11 @@
-  import './Home.css';
-  import {Navbar, Footer} from '../../components/index'
+  import './UserHome.css';
+  import {UserNavbar, Card, Footer} from '../../components/index'
   import images from '../../assets/Images/index'
   
-  function Home() {
+  function UserHome() {
     return (
       <>
-        <Navbar />
+        <UserNavbar />
         <div class="flex-col items-center m-[20px]">
 {/* <!-- ===================================================Introduction=================================================== --> */}
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_600px] main-color rounded-[40px] relative">
@@ -54,10 +54,27 @@
             </div>
         </div>
 {/* <!-- ===================================================End about=================================================== --> */}
+{/* <!-- ===================================================Last Announces=================================================== --> */}
+        <div class="relative p-[50px] rounded-[40px]">
+        {/* <img class="absolute w-[150px] hidden lg:block lg:bottom-[20px] lg:inset-x-3/4" src={images[4]}/> */}
+            <img class="absolute w-[100px] hidden lg:block lg:top-[20px] right-0" src={images[9]} />
+            <img class="absolute w-[100px] hidden lg:block lg:bottom-0 lg:inset-x-1/4" src={images[12]} />
+            <img class="absolute w-[100px] hidden lg:block lg:bottom-0 lg:inset-x-3/4" src={images[14]} />
+            <div class="my-[50px] mx-[50px]">
+                <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Last announces</button>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-[10px]">
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
+                </div>
+        </div>
+{/* ===================================================End Last Announces===================================================  */}
         </div>
         <Footer />
       </>
     );
   }
   
-export default Home;
+export default UserHome;

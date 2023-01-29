@@ -19,9 +19,10 @@ import img17 from './17. Schoolbus.png'
 import img18 from './18. Bag.png'
 import img19 from './19. ABC.png'
 import img20 from './20. Music.png'
-import img21 from './633d1789d4952d37a5630dd6_3d-cv-education.png'
-import img22 from './maxresdefault.jpg'
+import img21 from './21.png'
+import img22 from './22.png'
+import img23 from './maxresdefault.jpg'
 
-let images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22];
+let images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23];
             
 export default images

@@ -7,3 +7,4 @@ export {default as ResetPasswordConfirm} from './ResetPasswordConfirm/ResetPassw
 export {default as Signup} from './Signup/Signup'
 export {default as Google} from './Google/Google'
 export {default as Announces} from './Announces/Announces'
+export {default as Favorite} from './Favorite/Favorite'

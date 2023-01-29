@@ -45,10 +45,10 @@ const Login = ({ login, isAuthenticated }) => {
                     <p>Login into your Account</p>
                     <form onSubmit={e => onSubmit(e)}>
                         <div className="mb-6">
-                            <input type="email" id="email" name='email' value={email} onChange={e => onChange(e)} className="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your email" required />
+                            <input type="email" id="email" name='email' value={email} onChange={e => onChange(e)} className="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
                         </div>
                         <div className="mb-6">
-                            <input type="password" name='password' value={password} onChange={e => onChange(e)} minLength='6' id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Password" required />
+                            <input type="password" name='password' value={password} onChange={e => onChange(e)} minLength='6' id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Password" required />
                         </div>
                         <div className="flex items-start mb-6">
                             <div className="flex items-center h-5">

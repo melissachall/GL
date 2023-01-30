@@ -39,7 +39,7 @@ class Annonce(models.Model):
         ('')
 
     )
-    theme =models.CharField(max_length=50, choices=thèmes_choix
+    thème =models.CharField(max_length=50, choices=thèmes_choix
          )
     annonceur = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='annonceur')

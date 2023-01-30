@@ -40,6 +40,6 @@ class AnnonceSearch(generics.ListAPIView):
     queryset = Annonce.objects.all()
     serializer_class = AnnonceSerializer
     filter_backends=[DjangoFilterBackend]
-    search_fields=('adresse__Commune','' 'adresse__wilaya', 'title', 'category','theme', 'modalite', 'description', 'tarif','published')
-    filterset_fields=['adresse__Commune', 'adresse__wilaya', 'title', 'category','theme', 'modalite', 'description', 'tarif','published']
+    search_fields=('adresse__Commune','' 'adresse__wilaya', 'titre', 'catégorie','thème', 'modalité', 'description', 'tarif','publié')
+    filterset_fields=['adresse__Commune', 'adresse__wilaya', 'titre', 'catégorie','thème', 'modalité', 'description', 'tarif','publié']
 

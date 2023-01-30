@@ -1,7 +1,0 @@
-integrate django & reactJS:
-https://www.youtube.com/watch?v=tYKRAXIio28
-https://github.com/divanov11/Django-React-NotesApp
-
-git branch -M main
-git remote add origin url
-git push -u origin main

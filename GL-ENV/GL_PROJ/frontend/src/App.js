@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import {Activate, Home, UserHome, Login, ResetPassword, ResetPasswordConfirm, Signup, Google, Announces, Favorite, UserAnnounces} from './pages/index'
+import {Activate, Home, UserHome, Login, ResetPassword, ResetPasswordConfirm, Signup, Google, Announces, Favorite, UserAnnounces, Announce, About} from './pages/index'
 import store from './store';
 
 import { Provider } from 'react-redux';
@@ -18,8 +18,10 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" exact element={<Home/>} />
+            <Route exact path="/about" element={<About/>} />
             <Route exact path="/user-home" element={<UserHome/>} />
             <Route exact path="/announces" element={<Announces/>} />
+            <Route exact path="/announce" element={<Announce/>} />
             <Route exact path="/favorite" element={<Favorite/>} />
             <Route exact path="/user-announces" element={<UserAnnounces/>} />
             <Route exact path='/login' element={<Login/>} />
